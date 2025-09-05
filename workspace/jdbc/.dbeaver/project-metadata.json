@@ -1,0 +1,1 @@
+{"resources":{"Scripts/member.sql":{"default-datasource":"mysql8-197ec99a7f4-7cdc4b36a6f552a2","default-catalog":"jdbc"},"Scripts/post.sql":{"default-datasource":"mysql8-197ec99a7f4-7cdc4b36a6f552a2","default-catalog":"jdbc"},"Scripts/reply.sql":{"default-datasource":"mysql8-197ec99a7f4-7cdc4b36a6f552a2","default-catalog":"jdbc"}}}

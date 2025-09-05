@@ -1,0 +1,17 @@
+create database dml;
+use dml;
+
+create database dml;
+use dml;
+
+create table tbl_zoo(
+   id bigint unsigned primary key,
+   zoo_name varchar(255) not null,
+   zoo_address varchar(255) not null,
+   zoo_address_detail varchar(255) not null,
+   zoo_max_animal int check (zoo_max_animal > 0)
+);
+
+insert into tbl_zoo(id,zoo_name,zoo_address,zoo_address_detail,zoo_max_animal)
+values(1,'에버랜드','경기도 용인시','12345','10');
+

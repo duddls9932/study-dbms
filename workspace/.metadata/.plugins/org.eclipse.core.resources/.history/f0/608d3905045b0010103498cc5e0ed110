@@ -1,0 +1,67 @@
+create database dml;
+use dml;
+
+drop table tbl_zoo;
+create table tbl_zoo(
+   id bigint unsigned auto_increment primary key,
+   zoo_name varchar(255) not null,
+   zoo_address varchar(255) not null,
+   zoo_address_detail varchar(255) not null,
+   zoo_max_animal int check (zoo_max_animal > 0)
+);
+
+truncate table tbl_zoo;
+
+/*insert into tbl_zoo
+values(1, '애버랜드', '경기도 용인시', '12345', 10);
+insert into tbl_zoo
+values(2, '서울랜드', '경기도 과천', '55555', 5);*/
+
+insert into tbl_zoo (zoo_name, zoo_address, zoo_address_detail, zoo_max_animal)
+values('애버랜드', '경기도 용인시', '12345', 10);
+insert into tbl_zoo (zoo_name, zoo_address, zoo_address_detail, zoo_max_animal)
+values('서울랜드', '경기도 과천', '55555', 5);
+
+/*select 
+   id, zoo_name, zoo_address, 
+   zoo_address_detail, zoo_max_animal 
+from tbl_zoo
+where id = 2;*/
+
+select * from tbl_zoo;
+create table tbl_animal(
+   id bigint unsigned auto_increment primary key,
+   animal_name varchar(255) not null,
+   animal_type varchar(255) not null,
+   animal_age int default 0,
+   animal_height decimal(5, 2) check(animal_height > 0),
+   animal_weight decimal(5, 2) check(animal_weight > 0),
+   zoo_id bigint unsigned,
+   constraint fk_animal_zoo foreign key(zoo_id)
+   references tbl_zoo(id)
+);
+
+select * from tbl_zoo;
+select * from tbl_animal;
+
+insert into tbl_animal (animal_name, animal_type, animal_height, animal_weight)
+values('호돌이', '호랑이', 205.42, 115.25);
+
+update tbl_animal
+set zoo_id = 1
+where id = 2;
+
+delete from tbl_animal
+where id = 1;
+
+/*insert 실습*/
+/*첫번째 동물원에 두 마리의 동물*/
+/*두번째 동물원에 한 마리의 동물*/
+
+
+
+
+
+
+
+

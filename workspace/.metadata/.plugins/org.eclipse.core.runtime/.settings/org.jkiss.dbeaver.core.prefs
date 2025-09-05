@@ -1,0 +1,10 @@
+driver.selector.orderBy=score
+eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.disconnect_txn=always
+org.jkiss.dbeaver.core.confirm.drop_sql=always
+org.jkiss.dbeaver.core.confirm.exit=always
+project.active=jdbc
+sample.database.canceled=true
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1752021072086
+ui.show.tip.of.the.day.on.startup=true

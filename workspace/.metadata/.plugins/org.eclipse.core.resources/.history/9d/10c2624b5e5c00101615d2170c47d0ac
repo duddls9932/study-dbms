@@ -1,0 +1,7 @@
+use jdbc;
+
+create table tbl_reply(
+id bigint unsigned auto_increment primary key,
+
+
+)

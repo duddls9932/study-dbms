@@ -1,0 +1,28 @@
+use ddl;
+
+/*
+ * 회원 테이블
+ *  
+ * 회원 번호
+ * 회원 아이디
+ * 회원 비밀번호
+ * 회원 나이
+ * */
+create table tbl_member(
+   id bigint primary key,
+   member_id varchar(255),
+   member_password varchar(255),
+   member_age int
+);
+
+/*
+ * 동물원 테이블
+ * 
+ * 고유 번호
+ * 동물원 이름
+ * 동물원 주소
+ * 동물원 상세 주소
+ * 동물 최대 수용치
+ * */
+
+
